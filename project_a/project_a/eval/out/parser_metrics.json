@@ -1,0 +1,9 @@
+{
+  "n": 50,
+  "clarification_precision": 0.517,
+  "clarification_recall": 0.938,
+  "guessed_when_should_ask": 1,
+  "asked_unnecessarily": 14,
+  "field_accuracy_on_ok_cases": 1.0,
+  "asked_field_matches_gold": 15
+}

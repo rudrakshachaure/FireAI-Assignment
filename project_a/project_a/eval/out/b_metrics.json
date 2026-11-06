@@ -1,0 +1,24 @@
+{
+  "impl": "b",
+  "cases": 20,
+  "exact_pct": 35.0,
+  "recommendation_pct": 100.0,
+  "loud_failures": 0,
+  "silent_failures": 13,
+  "determinism": {
+    "sample": 5,
+    "repeats": 3,
+    "identical_pct": 100.0
+  },
+  "latency_p50_s": 2.7267,
+  "latency_p95_s": 4.5429,
+  "cpu_ms_mean": 3.125,
+  "tokens_in_total": 35630,
+  "tokens_out_total": 16604,
+  "usd_per_1000_requests_paid_list_price": 2.6099,
+  "price_source": "TODO-VERIFY (TODO-VERIFY)",
+  "traceable_rupee_pct": 100.0,
+  "hallucinated_citations": 0,
+  "trace_sums_ok_pct": 45.0,
+  "valid_clause_ids_known": 15
+}

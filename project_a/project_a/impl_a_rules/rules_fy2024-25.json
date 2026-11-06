@@ -1,0 +1,62 @@
+{
+  "fy": "2024-25",
+  "cess_pct": 4,
+  "old": {
+    "standard_deduction": 50000,
+    "employer_nps_pct_of_basic": 10,
+    "allows": ["hra", "80c", "80ccd1b", "80d", "24b", "80ccd2"],
+    "slab_sets": [
+  {"age_band": "<60", "slabs": [
+    {"upto": 250000, "rate_pct": 0}, {"upto": 500000, "rate_pct": 5},
+    {"upto": 1000000, "rate_pct": 20}, {"upto": null, "rate_pct": 30}]},
+  {"age_band": "60-79", "slabs": [
+    {"upto": 300000, "rate_pct": 0}, {"upto": 500000, "rate_pct": 5},
+    {"upto": 1000000, "rate_pct": 20}, {"upto": null, "rate_pct": 30}]},
+  {"age_band": "80+", "slabs": [
+    {"upto": 500000, "rate_pct": 0},
+    {"upto": 1000000, "rate_pct": 20}, {"upto": null, "rate_pct": 30}]}
+],
+    "rebate": {"limit": 500000, "max_amount": 12500, "marginal_relief": false},
+    "surcharge_tiers": [
+      {"above": 5000000, "rate_pct": 10}, {"above": 10000000, "rate_pct": 15},
+      {"above": 20000000, "rate_pct": 25}, {"above": 50000000, "rate_pct": 37}]
+  },
+  "new": {
+    "standard_deduction": 75000,
+    "employer_nps_pct_of_basic": 14,
+    "allows": ["80ccd2"],
+    "slab_sets": [
+      {"age_band": "all", "slabs": [
+        {"upto": 300000, "rate_pct": 0}, {"upto": 700000, "rate_pct": 5},
+        {"upto": 1000000, "rate_pct": 10}, {"upto": 1200000, "rate_pct": 15},
+        {"upto": 1500000, "rate_pct": 20}, {"upto": null, "rate_pct": 30}]}
+    ],
+    "rebate": {"limit": 700000, "max_amount": 25000, "marginal_relief": true},
+    "surcharge_tiers": [
+      {"above": 5000000, "rate_pct": 10}, {"above": 10000000, "rate_pct": 15},
+      {"above": 20000000, "rate_pct": 25}]
+  },
+  "caps": {
+    "c80c": 150000, "ccd1b": 50000,
+    "d80_self": 25000, "d80_self_senior": 50000,
+    "d80_parents": 25000, "d80_parents_senior": 50000,
+    "home_loan_interest": 200000
+  },
+  "hra": {
+    "metro_pct": 50, "nonmetro_pct": 40, "rent_excess_pct_of_basic": 10,
+    "metro_cities": ["Delhi", "Mumbai", "Kolkata", "Chennai"]
+  },
+  "clauses": {
+    "gross": "SAL-GROSS", "std": "STD-16IA", "hra": "HRA-10-13A",
+    "slabs_old": "RATES-OLD-FY2425", "slabs_new": "RATES-NEW-FY2425",
+    "rebate": "REBATE-87A", "surcharge": "SURCH-FY2425", "cess": "CESS-FA",
+    "c80c": "D-80C", "ccd1b": "D-80CCD1B", "ccd2": "D-80CCD2", "d80d": "D-80D",
+    "hp24b": "HP-24B", "round_income": "ROUND-288A", "round_tax": "ROUND-288B"
+  },
+  "todo_verify": [
+    "metro_cities: confirm against Rule 2A / current rules for FY2024-25",
+    "old-regime surcharge tiers 25% >2Cr and 37% >5Cr: confirm in Finance Act 2024 schedule",
+    "80D preventive check-up sub-limit (5k) is NOT modelled separately: input is total premium",
+    "all clause section numbers / URLs in rules_text/clauses.json"
+  ]
+}

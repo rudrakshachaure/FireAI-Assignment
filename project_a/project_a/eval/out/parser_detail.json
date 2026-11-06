@@ -1,0 +1,285 @@
+[
+  {
+    "id": "nl01",
+    "result": "asked unnecessarily",
+    "field": "sec_80c"
+  },
+  {
+    "id": "nl02",
+    "result": "asked unnecessarily",
+    "field": "deductions"
+  },
+  {
+    "id": "nl03",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl04",
+    "result": "asked unnecessarily",
+    "field": "sec_80ccd_1b"
+  },
+  {
+    "id": "nl05",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl06",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl07",
+    "result": "asked unnecessarily",
+    "field": "sec_80d_self"
+  },
+  {
+    "id": "nl08",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl09",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl10",
+    "result": "asked unnecessarily",
+    "field": "sec_80c"
+  },
+  {
+    "id": "nl11",
+    "result": "asked unnecessarily",
+    "field": "sec_80d_self"
+  },
+  {
+    "id": "nl12",
+    "result": "asked unnecessarily",
+    "field": "sec_80c"
+  },
+  {
+    "id": "nl13",
+    "result": "asked unnecessarily",
+    "field": "sec_80c"
+  },
+  {
+    "id": "nl14",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl15",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl16",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl17",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl18",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl19",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl20",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl21",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl22",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl23",
+    "result": "asked unnecessarily",
+    "field": "metro"
+  },
+  {
+    "id": "nl24",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl25",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl26",
+    "result": "asked unnecessarily",
+    "field": "sec_80d_self"
+  },
+  {
+    "id": "nl27",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl28",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl29",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl30",
+    "result": "asked unnecessarily",
+    "field": "sec_80c"
+  },
+  {
+    "id": "nl31",
+    "result": "asked unnecessarily",
+    "field": "home_loan_interest"
+  },
+  {
+    "id": "nl32",
+    "result": "asked unnecessarily",
+    "field": "sec_80c"
+  },
+  {
+    "id": "nl33",
+    "result": "ok",
+    "wrong_fields": []
+  },
+  {
+    "id": "nl34",
+    "result": "asked unnecessarily",
+    "field": "sec_80c"
+  },
+  {
+    "id": "nl35",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "gross_salary"
+  },
+  {
+    "id": "nl36",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "gross_salary"
+  },
+  {
+    "id": "nl37",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "age_band"
+  },
+  {
+    "id": "nl38",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "hra_received"
+  },
+  {
+    "id": "nl39",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "metro"
+  },
+  {
+    "id": "nl40",
+    "result": "GUESSED (critical)",
+    "got": {
+      "gross_salary": 1200000,
+      "basic_plus_da": 0,
+      "hra_received": 0,
+      "rent_paid_annual": 0,
+      "metro": false,
+      "age_band": "<60",
+      "parent_senior": false,
+      "deductions": {
+        "sec_80c": 150000,
+        "sec_80ccd_1b": 0,
+        "sec_80d_self": 0,
+        "sec_80d_parents": 0,
+        "home_loan_interest": 0
+      },
+      "employer_nps": 0,
+      "regime_override": null,
+      "fy": "2024-25"
+    }
+  },
+  {
+    "id": "nl41",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "parent_senior"
+  },
+  {
+    "id": "nl42",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "age_band"
+  },
+  {
+    "id": "nl43",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "deductions"
+  },
+  {
+    "id": "nl44",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "gross_salary"
+  },
+  {
+    "id": "nl45",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "rent_paid"
+  },
+  {
+    "id": "nl46",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "basic_plus_da"
+  },
+  {
+    "id": "nl47",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "gross_salary"
+  },
+  {
+    "id": "nl48",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "deductions"
+  },
+  {
+    "id": "nl49",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "gross_salary"
+  },
+  {
+    "id": "nl50",
+    "result": "asked",
+    "field_in_gold": true,
+    "field": "gross_salary"
+  }
+]

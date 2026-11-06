@@ -1,0 +1,14 @@
+id,kind,detail
+001-new_slab_edge,SILENT,new.taxable_income: got 300000 expected 299990
+008-new_slab_edge,SILENT,old.total_tax: got 60000 expected 59800
+010-new_slab_edge,SILENT,new.total_tax: got 0 expected 10
+011-new_slab_edge,SILENT,old.total_tax: got 135200 expected 124800; new.total_tax: got 70200 expected 52000
+012-new_slab_edge,SILENT,old.total_tax: got 130000 expected 124800; new.total_tax: got 62400 expected 52000
+013-new_slab_edge,SILENT,new.total_tax: got 62400 expected 52000
+014-new_slab_edge,SILENT,old.total_tax: got 131300 expected 124800; new.total_tax: got 62400 expected 52000
+015-new_slab_edge,SILENT,old.total_tax: got 135200 expected 124800; new.total_tax: got 70200 expected 52000
+016-new_slab_edge,SILENT,old.total_tax: got 192400 expected 187200; new.total_tax: got 96200 expected 83200
+017-new_slab_edge,SILENT,new.total_tax: got 93600 expected 83200
+018-new_slab_edge,SILENT,new.total_tax: got 93600 expected 83200
+019-new_slab_edge,SILENT,new.total_tax: got 93600 expected 83200
+020-new_slab_edge,SILENT,new.total_tax: got 96200 expected 83200
