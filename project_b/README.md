@@ -16,10 +16,6 @@ make all                         # full 2023 (~3M rows, needs ~4 GB RAM and a lo
 python -m streamlit run app.py
 ```
 
-`make all` = `download -> profile -> eval -> llm -> hybrid -> results`. Each step can run alone (`make eval`, ...).
-If you change `PER_MONTH_LIMIT` or `BATCH_SIZE` run `make clean-raw` first. Optional: `export SOCRATA_APP_TOKEN=...`
-(faster downloads), `LLM_RPM=10` (free-tier pacing), `N_EVAL_BATCHES`, `N_CLEAN_BATCHES`, `LLM_K_POS`, `LLM_K_NEG`.
-
 ## Where things are
 
 | Path | What it does |
@@ -35,20 +31,4 @@ If you change `PER_MONTH_LIMIT` or `BATCH_SIZE` run `make clean-raw` first. Opti
 | `pipeline/hybrid.py` | Task 5: hybrid + ablation + budget controls |
 | `eval/scale.py`, `eval/make_results.py` | Task 6 numbers, `RESULTS_B.md`, `DECISION_MATRIX.md`, heatmap |
 
-All generated numbers land in `eval/out/*.csv`. `RESULTS_B.md` only reads them.
-
-## Design choices (to explain live)
-- **pandas** is the primary engine: batches are 5,000 rows, so pandas is fast enough and the easiest to read. DuckDB/Spark is the scale-up path.
-- **Hand-rolled checks** instead of pandera/Great Expectations: every rule is a few lines, and you can show and change each one.
-- **Batches are consecutive in time**, whole batches are assigned to reference or held-out, so duplicate and near-duplicate checks see realistic neighbours.
-- **No leakage**: detectors take `(df, ref)` only; thresholds are tuned on the last 20% of reference batches; a test checks that detector code never imports the injector or ground truth.
-- LLM numbers come from samples and are extrapolated from measured tokens x list price (`common.py`).
-
-## Unverified / [HUMAN] items
-1. Run `make download` once and read the printed dataset check. I did not have network access, so the id `erm2-nwe9` and the column names in `common.COLUMNS` are unverified; the script stops if a column is missing.
-2. The code was not run end to end. I only smoke-tested injectors and rule detectors on synthetic data (sklearn, pyarrow, faker and network were unavailable). Run `make test` first and send me any failure.
-3. Re-check the Gemini model name and list price on the official pricing page (`common.py`); I only saw third-party mirrors dated October 2026.
-4. `CPU_USD_PER_HOUR`, peak factor, utilisation and retention in `eval/scale.py` are my assumptions. Change them if you disagree.
-5. Write the design discussion in `RESULTS_B.md` (section marked [HUMAN]) and pin versions with `pip freeze` after a good run.
-6. "50M rows/day x 120 customers" is read as 50M rows per day in total. Say if it means per customer.
-7. The resolution-vs-status regexes (`patterns.py`) were written before looking at the held-out templates. Keep it that way, or the held-out recall number stops meaning anything.
+, or the held-out recall number stops meaning anything.
