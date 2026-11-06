@@ -13,6 +13,7 @@ export GEMINI_API_KEY=...        # optional: without it the LLM rows say "not ru
 make test                        # unit tests on tiny synthetic data, no download needed
 make all PER_MONTH_LIMIT=20000   # quick trial: ~240k rows, minutes on a laptop
 make all                         # full 2023 (~3M rows, needs ~4 GB RAM and a long download)
+python -m streamlit run app.py
 ```
 
 `make all` = `download -> profile -> eval -> llm -> hybrid -> results`. Each step can run alone (`make eval`, ...).
