@@ -1,0 +1,13 @@
+problem_type,recall,precision,f1,recall_no_llm,precision_no_llm,chosen_family
+schema_column,1.0,1.0,1.0,1.0,1.0,rules
+type_change,1.0,1.0,1.0,1.0,1.0,rules
+date_format,1.0,1.0,1.0,1.0,1.0,rules
+latlon_swap,1.0,1.0,1.0,1.0,1.0,rules
+exact_dup,1.0,1.0,1.0,1.0,1.0,rules
+near_dup,0.6992307692307692,0.9670212765957447,0.8116071428571429,0.6992307692307692,0.9670212765957447,rules
+null_spike,0.3333333333333333,1.0,0.5,0.3333333333333333,1.0,rules
+closed_before_created,1.0,1.0,1.0,1.0,1.0,rules
+zip_borough,1.0,1.0,1.0,1.0,1.0,rules
+complaint_descriptor,1.0,1.0,1.0,1.0,1.0,rules
+resolution_status,0.6884615384615385,1.0,0.8154897494305239,0.6884615384615385,1.0,rules
+pii,0.8138461538461539,1.0,0.897370653095844,0.8138461538461539,1.0,rules

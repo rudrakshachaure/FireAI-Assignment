@@ -1,0 +1,9 @@
+{
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "cores": 16,
+  "ram_gb": NaN,
+  "python": "3.12.10",
+  "batch_size": 5000,
+  "n_eval_batches": 6,
+  "n_clean_batches": 10
+}

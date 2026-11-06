@@ -1,0 +1,14 @@
+{
+  "schema_column": "rules",
+  "type_change": "rules",
+  "date_format": "rules",
+  "latlon_swap": "rules",
+  "exact_dup": "rules",
+  "near_dup": "rules",
+  "null_spike": "rules",
+  "closed_before_created": "rules",
+  "zip_borough": "rules",
+  "complaint_descriptor": "rules",
+  "resolution_status": "rules",
+  "pii": "rules"
+}

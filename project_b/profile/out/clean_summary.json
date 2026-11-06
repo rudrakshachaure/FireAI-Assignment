@@ -1,0 +1,9 @@
+{
+  "raw_rows": 3224723,
+  "clean_rows_used": 2005000,
+  "batch_size": 5000,
+  "n_batches": 401,
+  "reference_batches": 200,
+  "heldout_batches": 201,
+  "rows_with_any_issue": 1218156
+}

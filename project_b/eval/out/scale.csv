@@ -1,0 +1,19 @@
+metric,value,formula_or_assumption
+"rows per day (assumption, all customers)",50000000.0,given
+customers,120.0,given; rows per customer per day = rows/customers = 416667
+average rows/sec needed,578.7037037037037,rows_per_day / 86400
+peak rows/sec needed,2893.5185185185182,average x 5 (assumption)
+"measured cheap-path throughput, rows/sec/core",17107.177666847667,"hybrid stream, LLM time excluded"
+cores needed at peak,1.0,ceil(peak / (throughput x 0.6 utilisation))
+batches per day,10000.0,rows_per_day / 5000
+LLM calls per batch (measured),0.0,hybrid_with_llm run
+LLM calls per day,0.0,batches x calls per batch
+LLM $ per call (measured tokens x list price),0.0,0 in + 0 out tokens
+LLM $ per day,0.0,calls per day x $ per call
+LLM $ per day if sample rate doubles,0.0,sensitivity: 2x calls (assumption)
+naive per-row LLM $ per day,,"one call per row, tokens from per_row mode"
+"latency per batch, cheap path (s)",0.27400192291660613,measured
+"latency per batch, LLM wait (s)",0.003721733333388025,"measured, includes free-tier pacing"
+storage bytes per row (parquet),47.39331471321696,clean parquet size / rows
+storage per day (GB),2.206923193913743,bytes_per_row x rows_per_day
+storage for 30 days (TB),0.06465595294669169,retention assumption

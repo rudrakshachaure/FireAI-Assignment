@@ -1,0 +1,6 @@
+injected,also_triggers_rule,extra_flagged
+date_format,type_change,1
+latlon_swap,near_dup,-1
+exact_dup,near_dup,235
+near_dup,complaint_descriptor,127
+complaint_descriptor,near_dup,-1

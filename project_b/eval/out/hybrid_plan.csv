@@ -1,0 +1,13 @@
+problem_type,chosen_family,f1_rules,f1_stats
+schema_column,rules,1.0,1.0
+type_change,rules,1.0,1.0
+date_format,rules,1.0,1.0
+latlon_swap,rules,1.0,0.9874917709019091
+exact_dup,rules,1.0,0.9832841691248771
+near_dup,rules,0.8101265822784809,0.6276150627615064
+null_spike,rules,0.28571428571428564,0.0
+closed_before_created,rules,1.0,0.0
+zip_borough,rules,1.0,0.9774386197743863
+complaint_descriptor,rules,0.9996667777407531,0.9727731092436975
+resolution_status,rules,0.8184324537219377,0.011650485436893204
+pii,rules,0.8830975428145942,0.02087410306588376

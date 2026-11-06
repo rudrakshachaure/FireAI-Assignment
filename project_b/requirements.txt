@@ -1,0 +1,13 @@
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.5.2
+pyarrow==17.0.0
+requests==2.32.3
+faker==30.8.2
+joblib==1.4.2
+matplotlib==3.9.2
+tabulate==0.9.0
+pydantic==2.9.2
+google-genai==1.14.0
+pytest==8.3.3
+ruff==0.7.1

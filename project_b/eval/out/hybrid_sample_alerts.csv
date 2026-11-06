@@ -1,0 +1,11 @@
+batch_has_problem,alert_type,level,rows_flagged,explanation
+null_spike,null_spike,batch,158,"column incident_zip is 3.2% null, above the reference limit 2.0%"
+resolution_status,resolution_status,row,28,28 rows: resolution_description says 'Your request is still pending and has not been reviewed.' but status is 'Closed'
+type_change,type_change,batch,0,column longitude has dtype kind 'O' but the contract says 'f'
+zip_borough,complaint_descriptor,row,1,1 rows: descriptor 'Contrary To LL 58/87(Handicapped Access)' was never seen with complaint_type 'Special Projects Inspection Team (SPIT)'
+schema_column,schema_column,batch,0,"column contract broken: missing columns ['closed_date'], unexpected columns ['ClosedDate']"
+schema_column,schema_column,batch,0,"column contract broken: missing columns ['complaint_type'], unexpected columns []"
+null_spike,null_spike,batch,158,"column descriptor is 3.2% null, above the reference limit 2.0%"
+null_spike,complaint_descriptor,row,36,36 rows: descriptor None was never seen with complaint_type 'Sewer'
+exact_dup,exact_dup,row,50,50 rows: row repeats an earlier row exactly (unique_key 56519165)
+closed_before_created,closed_before_created,row,250,250 rows: closed_date 2023-02-11 10:05:50 is before created_date 2023-02-13 10:05:50
