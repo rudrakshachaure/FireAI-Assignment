@@ -31,4 +31,3 @@ python -m streamlit run app.py
 | `pipeline/hybrid.py` | Task 5: hybrid + ablation + budget controls |
 | `eval/scale.py`, `eval/make_results.py` | Task 6 numbers, `RESULTS_B.md`, `DECISION_MATRIX.md`, heatmap |
 
-, or the held-out recall number stops meaning anything.
