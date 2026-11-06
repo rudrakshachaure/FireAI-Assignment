@@ -1,4 +1,4 @@
-# RESULTS_A (max 2 pages, paste numbers from eval/out/summary.md only)
+# RESULTS_A 
 
 ## Component table (rule / LLM / hybrid)
 | Component | Choice | Evidence (number from eval/out) |
