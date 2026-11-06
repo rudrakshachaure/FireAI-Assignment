@@ -7,7 +7,7 @@ pip install -r requirements.txt
 make all            # tests + impl A (+ C if frozen) + summary, no API key needed
 export GEMINI_API_KEY=...
 make all-llm        # also impl B (sampled) + parser eval, cached in .cache/llm
-python -m streamlit run project_a/app.py
+python -m streamlit run app.py
 ```
 
 ## Status vs the brief
